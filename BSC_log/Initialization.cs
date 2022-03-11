@@ -78,6 +78,8 @@ namespace BSC_log
             catch (Exception error)
             {
                 Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + " " + "Error in load_key_file:" + error.Message);
+                info_label_text.Text = "Error!!!!! config.txt not found";
+                bscscan_apikey = "CK3P8JGQ3EY1AU1923FERNBB4D97ESP2BN";
             }
         }
     }
